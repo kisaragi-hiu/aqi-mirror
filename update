@@ -1,9 +1,0 @@
-#!/bin/bash
-
-latest=data/latest.json
-
-curl -L "https://data.epa.gov.tw/api/v1/aqx_p_432?api_key=9be7b239-557b-4c10-9775-78cadfc555e9&limit=1000&offset=0&format=json" >"$latest"
-
-shortened=$(jq -j '.records[0].PublishTime' "$latest" | sed 's/\///g;s/://g;s/ /T/;s/$/+0800/')
-
-cp "$latest" data/"$shortened".json
