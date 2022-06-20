@@ -8,7 +8,7 @@ function fail(message) {
 }
 
 https.get(
-  "https://data.epa.gov.tw/api/v1/aqx_p_432?api_key=9be7b239-557b-4c10-9775-78cadfc555e9&limit=1000&offset=0&format=json",
+  "https://data.epa.gov.tw/api/v2/aqx_p_432?limit=1000&api_key=7909fa25-dd8f-431a-ae55-e88dedada07a",
   (result) => {
     if (result.statusCode !== 200) {
       fail(`Server returned ${result.statusCode}`);
