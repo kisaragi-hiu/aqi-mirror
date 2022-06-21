@@ -19,7 +19,8 @@ https.get(
     });
     result.on("end", () => {
       let parsed = JSON.parse(data);
-      let publishTime = parsed.records[0].PublishTime.concat("+0800")
+      let publishTime = parsed.records[0].publishtime
+        .concat("+0800")
         .replace(/\/|:/g, "")
         .replace(" ", "T");
       if (!publishTime.match(/\d{8}T\d{6}\+0800/)) {
