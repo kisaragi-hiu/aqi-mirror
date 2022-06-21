@@ -18,19 +18,15 @@ https.get(
       data += chunk;
     });
     result.on("end", () => {
-      try {
-        let parsed = JSON.parse(data);
-        let publishTime = parsed.records[0].PublishTime.concat("+0800")
-          .replace(/\/|:/g, "")
-          .replace(" ", "T");
-        if (!publishTime.match(/\d{8}T\d{6}\+0800/)) {
-          fail(`Publish time ${publishTime} is invalid`);
-        }
-        fs.writeFileSync("data/latest.json", data);
-        fs.writeFileSync(`data/${publishTime}.json`, data);
-      } catch (e) {
-        fail(e.message);
+      let parsed = JSON.parse(data);
+      let publishTime = parsed.records[0].PublishTime.concat("+0800")
+        .replace(/\/|:/g, "")
+        .replace(" ", "T");
+      if (!publishTime.match(/\d{8}T\d{6}\+0800/)) {
+        fail(`Publish time ${publishTime} is invalid`);
       }
+      fs.writeFileSync("data/latest.json", data);
+      fs.writeFileSync(`data/${publishTime}.json`, data);
     });
   }
 );
