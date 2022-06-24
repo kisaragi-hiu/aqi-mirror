@@ -432,8 +432,8 @@
             "no2": "2.9",
             "nox": "4.2",
             "no": "1.2",
-            "wind_speed": "",
-            "wind_direc": "",
+            "wind_speed": "4.3",
+            "wind_direc": "310",
             "publishtime": "2022\/06\/24 12:00:00",
             "co_8hr": "0.2",
             "pm2.5_avg": "8",
@@ -600,7 +600,7 @@
             "siteid": "16"
         },
         {
-            "sitename": "桃園",
+            "sitename": "��園",
             "county": "桃園市",
             "aqi": "24",
             "pollutant": "",
@@ -886,7 +886,7 @@
             "siteid": "27"
         },
         {
-            "sitename": "豐原",
+            "sitename": "豐���",
             "county": "臺中市",
             "aqi": "20",
             "pollutant": "",
@@ -1810,8 +1810,8 @@
             "no2": "5.6",
             "nox": "6.6",
             "no": "0.9",
-            "wind_speed": "",
-            "wind_direc": "",
+            "wind_speed": "1.1",
+            "wind_direc": "200",
             "publishtime": "2022\/06\/24 12:00:00",
             "co_8hr": "0.2",
             "pm2.5_avg": "6",
