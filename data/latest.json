@@ -179,8 +179,8 @@
     "limit": "1000",
     "offset": "0",
     "_links": {
-        "start": "\/api\/v2\/aqx_p_432?api_key=e8dd42e6-9b8b-43f8-991e-b3dee723a52d&limit=1000&format=json&sort=ImportDate desc",
-        "next": "\/api\/v2\/aqx_p_432?api_key=e8dd42e6-9b8b-43f8-991e-b3dee723a52d&limit=1000&format=json&sort=ImportDate desc&offset=1000"
+        "start": "\/api\/v2\/aqx_p_432?api_key=e8dd42e6-9b8b-43f8-991e-b3dee723a52d",
+        "next": "\/api\/v2\/aqx_p_432?api_key=e8dd42e6-9b8b-43f8-991e-b3dee723a52d&offset=1000"
     },
     "records": [
         {
