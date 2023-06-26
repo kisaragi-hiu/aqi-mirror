@@ -1150,7 +1150,7 @@
             "county": "雲林縣",
             "aqi": "41",
             "pollutant": "",
-            "status": "良好",
+            "status": "良���",
             "so2": "2",
             "co": "0.17",
             "o3": "43.2",
@@ -1718,7 +1718,7 @@
             "siteid": "60"
         },
         {
-            "sitename": "恆春",
+            "sitename": "恆��",
             "county": "屏東縣",
             "aqi": "10",
             "pollutant": "",
